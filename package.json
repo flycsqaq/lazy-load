@@ -1,0 +1,33 @@
+{
+  "name": "throttle-lazy-load",
+  "version": "1.0.2",
+  "description": "",
+  "source": "src/Lazy.js",
+  "main": "lib/Lazy.js",
+  "module": "lib/Lazy.mjs",
+  "unpkg": "lib/Lazy.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleanLib": "./node_modules/.bin/rimraf lib",
+    "bableBuild": "./node_modules/.bin/babel src --out-dir lib",
+    "prepublish": "npm run cleanLib && npm run build",
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "author": "hellozfy16@163.com",
+  "keywords": [
+    "javascript",
+    "lazy",
+    "image",
+    "scroll",
+    "css",
+    "html"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "microbundle": "^0.11.0",
+    "rimraf": "^2.6.3"
+  }
+}

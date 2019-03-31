@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lazy-load</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      img {
+        display: block;
+        width: 400px;
+        height: 300px
+      }
+      body {
+        width: 1000px;
+      }
+    </style>
+    <script src="./lib/Lazy.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        Lazy.create().start({})
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <img lazy-img='./img/Sylvanas1.jpg'>
+      <img lazy-img='./img/Sylvanas2.jpg'>
+      <img lazy-img='./img/Sylvanas3.jpg'>
+      <img lazy-img='./img/Sylvanas4.jpg'>
+      <img lazy-img='./img/Sylvanas5.jpg'>
+      <img lazy-img='./img/Sylvanas6.jpg'>
+      <img lazy-img='./img/Sylvanas7.jpg'>
+      <img lazy-img='./img/Sylvanas8.jpg'>
+      <img lazy-img='./img/Sylvanas9.jpg'>
+      <img lazy-img='./img/Sylvanas10.jpg'>
+    </div>
+  </body>
+</html>
