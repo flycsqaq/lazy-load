@@ -1,5 +1,5 @@
 # lazy-load
-Simple & light weight (<3kb gzipped) vanilla javascript plugin to lazy load.
+Simple & light weight (<5kb gzipped) vanilla javascript plugin to lazy load.
 
 ## DEMO
 
